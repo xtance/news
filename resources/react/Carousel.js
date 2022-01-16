@@ -1,4 +1,5 @@
 import React from "react";
+import { NewsCard } from "./NewsCard";
 
 export class Carousel extends React.Component {
 
@@ -9,25 +10,23 @@ export class Carousel extends React.Component {
 		}
 	}
 
-	componentDidMount(){
+	componentDidMount () {
 		this.getNews();
 	}
 
 	getNews(page = 0){
 		this.setState({
-			news: ['c', 'd']
+			news: [ { title: 'abc' }, 'c', 'd', 'e', 'f', 'g', 'h', 'i', ]
 		});
+		//setTimeout(() => this.props.setWarning('test'), 1230);
 	}
 
 	render(){
 		return (
-			<div>
-				Test
-				{this.state.news.map((news, index) => {
+			<div className="flex flex-grow gap-4 z-10">
+				{this.state.news.slice(0, 5).map((news, index) => {
 					return (
-						<div key={index}>
-							#{index} {news}
-						</div>
+						<NewsCard key={index} news={news} />
 					);
 				})}
 			</div>

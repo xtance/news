@@ -7,7 +7,7 @@ export function Header(){
 			flex justify-between
 			p-4
 			text-xl
-			shadow
+			shadow-md
 		">
 			<h1>Новости</h1>
 		</div>

@@ -1,11 +1,12 @@
 import React from "react";
 
-export function Notify(props){
+export function Warning(props){
+	if (!props.warning) return '';
 	return (
-		<div className="my-2 p-4 shadow-md">
+		<div className="my-4 p-4 shadow-md">
 			<h1 className="font-bold text-2xl">Уведомление</h1>
 			<p>
-				{props.text}
+				{props.warning}
 			</p>
 		</div>
 	);
