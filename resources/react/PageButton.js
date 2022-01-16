@@ -3,7 +3,7 @@ import React from "react";
 export function PageButton(props){
 	return (
 		<div
-			onClick={() => props.setPage(props.isNext)}
+			onClick={() => props.selectPage(props.isNext)}
 			className="
 				p-4 m-2
 				rounded-full

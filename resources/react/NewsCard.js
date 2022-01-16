@@ -8,15 +8,14 @@ export function NewsCard(props){
 				flex flex-col justify-end
 				bg-cover bg-center bg-no-repeat
 				shadow-md hover:shadow-lg
-				border border-black/15 hover:border-black/25
 				duration-100
 			"
 			style={{backgroundImage: `url("${props.news.image}")`}}
 		>
-			<div className="w-full bg-white/70">
-				<h1>{props.news.title}</h1>
+			<a className="w-full block p-2 bg-black/50 text-white backdrop-blur-lg border-t" href={props.news.url}>
+				<h1 className="font-bold">{props.news.title}</h1>
 				<p>{props.news.subtitle}</p>
-			</div>
+			</a>
 		</div>
 	);
 }

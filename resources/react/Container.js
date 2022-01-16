@@ -5,6 +5,7 @@ export function Container(props){
 		<div className="
 			mx-auto my-4 p-2
 			w-full md:w-[90%] xl:w-[80%]
+			duration-100
 		">
 			{props.children}
 		</div>
