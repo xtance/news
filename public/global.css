@@ -1,0 +1,80 @@
+@font-face {
+	font-family: 'Regular';
+	src: url('./fonts/Inter-Medium.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Bold';
+	src:  url('./fonts/Inter-ExtraBold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.regular {
+    font-family: 'Regular' !important;
+}
+
+.bold {
+    font-family: 'Bold' !important;
+}
+
+*, *:before, *:after, button, input, select, textarea {
+	font-family: 'Regular';
+	box-sizing: border-box;
+
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+
+	/* Firefox */
+	scrollbar-width: none !important;
+	scrollbar-color: transparent transparent;
+}
+
+html, body {
+    padding: 0; 
+    margin: 0;
+}
+
+select, option, input, textarea {
+	color: initial;
+	margin: 0;
+	user-select: text;
+}
+
+*::-webkit-scrollbar {
+	background: transparent;
+	width: 0px;
+}
+
+*::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+	background: transparent;
+}
+
+.shadow-panel {
+	box-shadow: 0px 0px 16px 8px rgba(0, 0, 0, 0.25);
+}
+
+.stroke {
+	text-shadow: 
+		#000 0px 0px 2px,   #000 0px 0px 2px,   #000 0px 0px 2px,
+		#000 0px 0px 2px,   #000 0px 0px 1px !important;
+    -webkit-font-smoothing: antialiased;
+}
+
+.stroke > * {
+	text-shadow: 
+		#000 0px 0px 2px,   #000 0px 0px 2px,   #000 0px 0px 2px,
+		#000 0px 0px 2px,   #000 0px 0px 1px !important;
+    -webkit-font-smoothing: antialiased;
+}
+
+.nostroke {
+	text-shadow: none !important;
+}
